@@ -11,11 +11,11 @@
       "<all_urls>"
     ],
     "action": {
-      "default_popup": "src/popup.html",
+      "default_popup": "app/popup.html",
       "default_icon": {
-        "16": "src/icons/icon16.png",
-        "48": "src/icons/icon48.png",
-        "128": "src/icons/icon128.png"
+        "16": "app/icons/icon16.png",
+        "48": "app/icons/icon48.png",
+        "128": "app/icons/icon128.png"
       }
     }
   }

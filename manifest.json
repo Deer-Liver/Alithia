@@ -5,14 +5,11 @@
     "description": "Scans images and videos for context and displays consequences.",
     "permissions": [
       "activeTab",
-      "storage"
+      "storage",
+      "scripting"
     ],
     "host_permissions": [
       "<all_urls>"
-    ],
-    "permissions": [
-      "scripting"
-      "activeTab"
     ],
     "action": {
       "default_popup": "app/popup.html",

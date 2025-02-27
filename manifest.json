@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "ConRad",
+    "name": "Conrad (Consequences Eradicator)",
     "version": "1.0",
     "description": "Scans images and videos for context and displays consequences.",
     "permissions": [

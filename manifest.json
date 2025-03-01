@@ -1,22 +1,29 @@
 {
-  "manifest_version": 3,
-  "name": "Conrad (Consequences Eradicator)",
-  "version": "1.0",
-  "description": "Scans images and videos for context and displays consequences.",
-  "permissions": [
+    "manifest_version": 3,
+    "name": "Consequence Eradicator",
+    "description": "Analyze the content of posts to detect potential consequences.",
+    "version": "1.0",
+    "permissions": [
       "activeTab",
-      "storage",
-      "scripting"
-  ],
-  "host_permissions": [
-      "<all_urls>"
-  ],
-  "action": {
+      "storage"
+    ],
+    "action": {
       "default_popup": "app/popup.html",
       "default_icon": {
-          "16": "app/icons/icon16.png",
-          "48": "app/icons/icon48.png",
-          "128": "app/icons/icon128.png"
+        "16": "app/icons/icon16.png",
+        "48": "app/icons/icon48.png",
+        "128": "app/icons/icon128.png"
       }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["app/content.js"]
+      }
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
   }
-}
+  

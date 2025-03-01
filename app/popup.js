@@ -6,7 +6,7 @@ document.getElementById("scanButton").addEventListener("click", async () => {
         // Send a message to content.js to analyze the page
         chrome.scripting.executeScript({
             target: { tabId: tab.id },
-            files: ["content.js"]
+            files: ["app/content.js"]
         });
     } else {
         alert("No active tab found!");

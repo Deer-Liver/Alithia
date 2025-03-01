@@ -1,16 +1,20 @@
-<!-- popup.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consequence Eradicator</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Link to your styles.css -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h3>Consequence Eradicator</h3>
-    <button id="scanButton">Scan Post</button>
-
+    <div class="popup-container">
+        <h1>Consequence Eradicator</h1>
+        <p>Scan a post for images, videos, and text!</p>
+        <button id="scanButton">Scan Content</button>
+        <div id="scanResults">
+            <!-- This is where we'll show results after scanning -->
+        </div>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>

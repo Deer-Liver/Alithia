@@ -1,0 +1,22 @@
+# Ignore node_modules (if you use npm or yarn for dependencies)
+node_modules/
+
+# Ignore temporary files (IDE/editor backups, logs, etc.)
+*.log
+*.swp
+*.bak
+
+# Ignore build files if any (e.g., for bundlers like Webpack or Rollup)
+dist/
+build/
+
+# Ignore OS-specific files
+.DS_Store   # macOS
+Thumbs.db   # Windows
+
+# Ignore any sensitive or config files (if you store API keys locally)
+config.json
+.env
+
+# Ignore extension-related cache or temporary files
+*.tmp

@@ -17,6 +17,3 @@ Thumbs.db   # Windows
 # Ignore any sensitive or config files (if you store API keys locally)
 config.json
 .env
-
-# Ignore extension-related cache or temporary files
-*.tmp

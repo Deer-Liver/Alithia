@@ -1,36 +1,27 @@
 {
-  "manifest_version": 3,
-  "name": "Consequence Eradicator",
-  "version": "1.0",
-  "description": "Scan content for consequences before posting.",
-  "action": {
-      "default_popup": "app/popup.html",
-      "default_icon": {
-          "16": "app/icons/icon16.png",
-          "48": "app/icons/icon48.png",
-          "128": "app/icons/icon128.png"
-      }
-  },
-  "permissions": [
-      "activeTab",
-      "scripting",
-      "storage"
-  ],
-  "host_permissions": [
-      "<all_urls>"
-  ],
-  "background": {
-      "service_worker": "app/background.js"
-  },
-  "content_scripts": [
-      {
-          "matches": ["<all_urls>"],
-          "js": ["app/content.js"]
-      }
-  ],
-  "icons": {
-      "16": "app/icons/icon16.png",
-      "48": "app/icons/icon48.png",
-      "128": "app/icons/icon128.png"
+    "manifest_version": 3,
+    "name": "ConRad: Consequence Eradicator",
+    "version": "1.0",
+    "description": "Scan content for consequences before posting.",
+    "action": {
+        "default_popup": "app/popup.html",
+        "default_icon": {
+            "16": "app/icons/icon16.png",
+            "48": "app/icons/icon48.png",
+            "128": "app/icons/icon128.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "app/background.js"
+    },
+    "content_scripts": []
   }
-}
+  

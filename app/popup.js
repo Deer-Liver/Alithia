@@ -39,28 +39,39 @@ function scanContent() {
     return { images, text };
 }
 
-// Function to send data to OpenAI API
+// Function to send data to OpenAI API with error detection
 async function fetchOpenAIResponse(images, text) {
-    const apiKey = "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"; // Hardcoded API key
+    const apiKey = "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"; // Updated API key
 
     const prompt = `Analyze the following post content and generate a one-sentence warning about potential consequences. Examples include "Warning: posting this may result in a minimum of 4 weeks detention" or "Warning: posting this may lead to an increase in engagement."
 
     Images detected: ${images}
     Extracted text: "${text}"`;
 
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${apiKey}`
-        },
-        body: JSON.stringify({
-            model: "gpt-4o",
-            messages: [{ role: "user", content: prompt }],
-            max_tokens: 50
-        })
-    });
+    try {
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${apiKey}`
+            },
+            body: JSON.stringify({
+                model: "gpt-4o",
+                messages: [{ role: "user", content: prompt }],
+                max_tokens: 50
+            })
+        });
 
-    const data = await response.json();
-    return data.choices[0].message.content;
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(`OpenAI API error: ${data.error.message}`);
+        }
+
+        console.log("OpenAI response:", data);  // Log the full response for debugging
+        return data.choices[0].message.content;
+    } catch (error) {
+        console.error("Error during OpenAI request:", error);
+        throw new Error("There was an issue processing the content. Please try again.");
+    }
 }

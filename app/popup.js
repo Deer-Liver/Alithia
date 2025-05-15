@@ -41,7 +41,7 @@ function scanContent() {
 
 // Function to send data to OpenAI API with error detection
 async function fetchOpenAIResponse(images, text) {
-    const apiKey = "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"; // Updated API key
+    const apiKey = "Your API key here"; // Replace Your API key here with your api key
 
     const prompt = `Analyze the following post content and generate a one-sentence warning about potential consequences. Examples include "Warning: posting this may result in a minimum of 4 weeks detention" or "Warning: posting this may lead to an increase in engagement."
 

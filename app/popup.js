@@ -41,37 +41,27 @@ function scanContent() {
 
 // Function to send data to OpenAI API with error detection
 async function fetchOpenAIResponse(images, text) {
-    const apiKey = "Your API key here"; // Replace Your API key here with your api key
-
-    const prompt = `Analyze the following post content and generate a one-sentence warning about potential consequences. Examples include "Warning: posting this may result in a minimum of 4 weeks detention" or "Warning: posting this may lead to an increase in engagement."
-
-    Images detected: ${images}
-    Extracted text: "${text}"`;
+    const SERVER_URL = "http://192.168.1.178:3000/analyze"; // Talk to server that talks to open ai (for security)
 
     try {
-        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        const response = await fetch(SERVER_URL, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${apiKey}`
+                "Content-Type": "application/json"
             },
-            body: JSON.stringify({
-                model: "gpt-4o",
-                messages: [{ role: "user", content: prompt }],
-                max_tokens: 50
-            })
+            body: JSON.stringify({ images, text })
         });
 
         const data = await response.json();
 
         if (!response.ok) {
-            throw new Error(`OpenAI API error: ${data.error.message}`);
+            throw new Error(data.error || "Server error");
         }
 
-        console.log("OpenAI response:", data);  // Log the full response for debugging
-        return data.choices[0].message.content;
+        return data.warning;
     } catch (error) {
-        console.error("Error during OpenAI request:", error);
-        throw new Error("There was an issue processing the content. Please try again.");
+        console.error("Error contacting server:", error);
+        throw new Error("Could not get warning from server.");
     }
 }
+

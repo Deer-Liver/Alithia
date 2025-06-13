@@ -60,7 +60,7 @@ ConRad works by:
 ## Development
 
 ### Prerequisites
-- Chrome browser
+- Chrome based browser
 - Basic knowledge of JavaScript, HTML, and CSS
 
 ### Project Structure

@@ -15,7 +15,6 @@
         "activeTab",
         "scripting",
         "storage",
-        "http://192.168.1.178:3000/*"
     ],
     "host_permissions": [
         "<all_urls>"

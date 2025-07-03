@@ -1,10 +1,10 @@
-# ConRad: Consequence Eradicator (BETA)
+# Alithia: Erasing Regrets (BETA)
 
-![ConRad Logo](app/icons/icon128.png)
+![Alithia Logo](app/icons/icon128.png)
 
 ## Overview
 
-ConRad is a Chrome extension that helps users avoid potential consequences by scanning content before posting. Using advanced AI analysis, it provides instant warnings about possible outcomes of posting specific content, allowing users to make more informed decisions online.
+Alithia is a Chrome extension that helps users avoid potential consequences by scanning content before posting. Using advanced AI analysis, it provides instant warnings about possible outcomes of posting specific content, allowing users to make more informed decisions online.
 
 ## Features
 
@@ -15,7 +15,7 @@ ConRad is a Chrome extension that helps users avoid potential consequences by sc
 
 ## Installation
 
-> **BETA NOTICE**: ConRad is currently in beta and requires manual installation and configuration.
+> **BETA NOTICE**: Alithia is currently in beta and requires manual installation and configuration.
 
 ### Installation Steps
 1. Download or clone this repository
@@ -26,7 +26,7 @@ ConRad is a Chrome extension that helps users avoid potential consequences by sc
 3. Open Chrome and navigate to `chrome://extensions/`
 4. Enable "Developer mode" in the top-right corner
 5. Click "Load unpacked" and select the extension directory
-6. The ConRad icon should appear in your browser toolbar
+6. The Alithia icon should appear in your browser toolbar
 
 ### Getting an API Key
 1. Visit [OpenAI's platform](https://platform.openai.com/)
@@ -38,14 +38,14 @@ ConRad is a Chrome extension that helps users avoid potential consequences by sc
 ## Usage
 
 1. Navigate to any webpage where you're considering posting content
-2. Click the ConRad icon in your browser toolbar
+2. Click the Alithia icon in your browser toolbar
 3. Click the "Scan Content" button
 4. Review the warning about potential consequences
 5. Make an informed decision about whether to post
 
 ## Technical Details
 
-ConRad works by:
+Alithia works by:
 - Extracting text and counting images from the current page
 - Sending this information to OpenAI's GPT-4o model
 - Processing the AI's analysis to generate a concise warning
@@ -53,7 +53,7 @@ ConRad works by:
 
 ## Privacy and Security
 
-- ConRad only accesses page content when you explicitly click the scan button
+- Alithia only accesses page content when you explicitly click the scan button
 - No data is stored locally or remotely beyond the immediate analysis
 - API calls are made securely with proper authentication
 
@@ -113,8 +113,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Built with OpenAI's GPT-4o API
-- Icon designed by [wallpapersden.com](https://wallpapersden.com/conrad-the-simpsons-wallpaper/)
+- Icon designed by [wallpapersden.com](https://wallpapersden.com/Alithia-the-simpsons-wallpaper/)
 
 ---
 
-*Note: Always review and adhere to the terms of service for any platform where you're posting content. ConRad is meant as a helpful tool, not as a guarantee against all possible consequences of online actions.*
+*Note: Always review and adhere to the terms of service for any platform where you're posting content. Alithia is meant as a helpful tool, not as a guarantee against all possible consequences of online actions.*

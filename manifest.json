@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "ConRad: Consequence Eradicator",
+    "name": "Alithia: Erasing Regrets",
     "version": "1.0",
     "description": "Scan content for consequences before posting.",
     "action": {

@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(() => {
-    console.log("Consequence Eradicator Extension Installed or Updated.");
+    console.log("Alithia: Erasing Regrets Extension Installed or Updated.");
 });
 
 chrome.action.onClicked.addListener((tab) => {

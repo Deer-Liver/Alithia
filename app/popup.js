@@ -41,8 +41,7 @@ function scanContent() {
 
 // Function to send data to OpenAI API with error detection
 async function fetchOpenAIResponse(images, text) {
-    const apiKey = "API_KEY"; // Replace with api key
-
+    const apiKey = "API_KEY"; //Insert your API here
     const prompt = `Analyze the following post content and generate a one-sentence warning about potential consequences. Examples include "Warning: posting this may result in a minimum of 4 weeks detention" or "Warning: posting this may lead to an increase in engagement."
 
     Images detected: ${images}

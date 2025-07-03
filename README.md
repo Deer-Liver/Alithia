@@ -99,12 +99,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Future Enhancements
 
-- Support for additional platforms beyond basic web pages
-- Customizable warning preferences
-- Offline capability using a local model
-- Browser sync to maintain settings across devices
 - More secure API key handling
-- Published version on the Chrome Web Store
+- Firefox port
+- Published version on the Chrome & Firefox Web Store
 
 ## License
 

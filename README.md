@@ -110,7 +110,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Built with OpenAI's GPT-4o API
-- Icon designed by [wallpapersden.com](https://wallpapersden.com/Alithia-the-simpsons-wallpaper/)
+- Icon created using Krita
 
 ---
 

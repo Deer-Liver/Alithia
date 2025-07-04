@@ -78,10 +78,11 @@ Alithia works by:
 │   ├── background.js      # Background service worker
 │   ├── popup.html         # Extension popup interface
 │   ├── popup.js           # Popup functionality
-│   ├── styles.css         # Styling for popup
+│   ├── styles.css         # Styling for popup.html
 │   └── icons/             # Extension icons
 ├── media/                 # Screenshots and GIFs for README gallery
 ├── manifest.json          # Extension configuration
+├── LICENSE                # MIT License
 └── README.md              # This file
 ```
 

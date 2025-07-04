@@ -13,6 +13,15 @@ Alithia is a Chrome extension that helps users avoid potential consequences by s
 - **User-friendly Interface**: Simple one-click operation
 - **Privacy-focused**: All analysis happens via secure API - no data storage
 
+## Gallery
+
+<p align="center">
+  <img src="media/default.png" width="300" style="margin-right: 10px;" />
+  <img src="media/reddit-bad.png" width="300" />
+</p>
+
+<p align="center"><em>Alithia before and after prediction</em></p>
+
 ## Installation
 
 > **BETA NOTICE**: Alithia is currently in beta and requires manual installation and configuration.
@@ -65,15 +74,15 @@ Alithia works by:
 
 ### Project Structure
 ```
-consequence-eradicator/
 ├── app/
 │   ├── background.js      # Background service worker
 │   ├── popup.html         # Extension popup interface
 │   ├── popup.js           # Popup functionality
 │   ├── styles.css         # Styling for popup
 │   └── icons/             # Extension icons
+├── media/                 # Screenshots and GIFs for README gallery
 ├── manifest.json          # Extension configuration
-└── README.md             # This file
+└── README.md              # This file
 ```
 
 ### Contributing

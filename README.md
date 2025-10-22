@@ -112,6 +112,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - More secure API key handling
 - Firefox port
 - Published version on the Chrome & Firefox Web Store
+- Always Free, donation based version.
 
 ## License
 

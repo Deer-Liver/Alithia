@@ -1,3 +1,5 @@
+Note: I made this when AI was cool & I will no longer be maintaining this Repo
+
 # Alithia: Erasing Regrets (BETA)
 
 ![Alithia Logo](app/icons/icon128.png)
